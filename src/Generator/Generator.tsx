@@ -1,18 +1,11 @@
-// import Data from "./Data.tsx";
-import Webp from "../assets/image-webp/Webp_data";
+import Max from "../assets/Max/Max";
+
 const Generator = () => {
-const slice=Webp.slice(0,36);
     return (
-        <div className='UwU'>
-        { slice.map((images)=>(
-            <div  key={images.id}>
-                <img   
-            
-                src={images.data} alt={images.filename}  loading="lazy"/>      
-                </div>
-            ))}
-        </div>
+    <>
+    <Max></Max>
+    </>
     );
 };
 
-export default Generator;    
+export default Generator;
