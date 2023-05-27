@@ -51,10 +51,7 @@ section{
     margin: color.$margin-0;
     display:flexbox;
     line-height: 0;
-    -webkit-column-count: 4;
-    -webkit-column-gap:0;
-    -moz-column-count:3;
-    -moz-column-gap: 0;
+    column-count: 4;
     column-gap: 0;
     height: auto!important;
  div{
