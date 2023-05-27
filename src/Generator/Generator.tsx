@@ -1,10 +1,7 @@
 import Max from "../assets/Max/Max";
-
 const Generator = () => {
     return (
-    <>
-    <Max></Max>
-    </>
+     <><Max></Max></>
     );
 };
 
