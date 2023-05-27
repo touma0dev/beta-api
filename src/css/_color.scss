@@ -1,0 +1,36 @@
+$black:#213547;
+$color: rgba(255, 255, 255, 0.87);
+$background-color: #242424;
+$font-size-error:23pt;
+$font-size-a:18pt;
+$font-weight-600:600;
+$font-weight-400:400;
+//Align Atributtes
+$max-widht-600px:600px;
+$margin-0: 0 auto;
+
+@mixin Flex-around{
+    justify-content: space-around;
+    align-items: center;
+}
+@mixin Flex-Column{
+    flex-direction: column;
+    align-items: center;
+}
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: $font-weight-400;
+  }
+  a {
+    font-weight: 500;
+    text-decoration: inherit;
+  }
+  h1 {
+    font-size: 2.2em;
+    line-height: 1.1;
+  }
+li,a{
+    text-decoration: none;
+    list-style-type:none ;
+}
