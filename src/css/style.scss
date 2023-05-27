@@ -2,15 +2,21 @@
 @use 'color';
 
 header{
-    max-width:70%;
+    max-width:color.$wi70;
     margin: color.$margin-0;
     .Navbar{
         display: flex;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: 99;
         @include color.Flex-around;
         &-Lista{
             display: flex;
             gap: 20pt;
             li{
+                display: block;
                 a{
                     font-size: color.$font-size-a;
                 }
@@ -19,48 +25,68 @@ header{
     }
 }
 .Error{
-    max-width: color.$max-widht-600px;
+    max-width: color.$wi30;
     margin:color.$margin-0;
     font-weight: color.$font-weight-600;
     font-size: color.$font-size-error;
     background-color: color.$background-color;
     text-align: center;
     display: flex;
-
+    user-select: none;
+    a{
+        z-index: 99;
+    }
     @include color.Flex-Column;
-section{
+    section{
     position: relative;
+
     img{
-        max-width: 300px;
+        max-width:360px;
+        user-select: none;
     }
     &::after {
         position: absolute;
-        content: '';
+        content: '404';
         width: 100%;
+        user-select: none;
         max-width: 100%;
         height: 100%;
-        background-color:color.$background-color;
-        left: 0;
-        filter: opacity(0.1);
+ 
+        left: -4%;
+        color:  linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 52%, rgba(0,212,255,1) 100%) !important;
+        top:32%;
+        font-size: 1.5em;
+        bottom: 0;
     }
 }
 }
+
 .UwU{
     max-width:70%;
     height: auto ;
-    margin: color.$margin-0;
-    display:flexbox;
+    margin: 14vh  auto;
     line-height: 0;
-    column-count: 4;
-    column-gap: 0;
-    height: auto!important;
+    column-count: 5;
+    column-gap:0;
+    height: auto !important;
+    position: relative;
+    &::after{
+        content: '';
+        width: 100%;
+        height: 5.5%;
+        background-color:color.$background-color;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
  div{
-    height: auto!important;
-    width: 102%!important;
+    width: 100%!important;
+    height: auto !important;
+
     img{
-        width: 102%!important;
-        height: auto!important;
+        width: 100%!important;
+        height: auto !important;
         }
     }
-
 }

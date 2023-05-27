@@ -1,12 +1,15 @@
 $black:#213547;
-$color: rgba(255, 255, 255, 0.87);
+$color: #ffffffde;
 $background-color: #242424;
 $font-size-error:23pt;
 $font-size-a:18pt;
 $font-weight-600:600;
 $font-weight-400:400;
 //Align Atributtes
-$max-widht-600px:600px;
+$wi20:20%;
+$wi30:30%;
+$wi70:70%;
+$wi90:90%;
 $margin-0: 0 auto;
 
 @mixin Flex-around{

@@ -1,6 +1,6 @@
 import '../css/style.scss'
 import { Link } from 'react-router-dom';
-import Error from './pngwing.com.png'
+import Error from './erro404.svg'
 export default function Errorpage() { 
     return (
         <div className='Error'>

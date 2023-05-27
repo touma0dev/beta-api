@@ -1,20 +1,17 @@
-import Data from "./Data.tsx";
+// import Data from "./Data.tsx";
+import Webp from "../assets/image-webp/Webp_data";
 const Generator = () => {
-const type="data:image/png;base64,"
-const slice=Data.slice(0,31);
+const slice=Webp.slice(0,36);
     return (
         <div className='UwU'>
         { slice.map((images)=>(
-            <div>
+            <div  key={images.id}>
                 <img   
-             key={images.id}
-                src={type+images.data} alt={images.filename}  loading="lazy"/>      
-
+            
+                src={images.data} alt={images.filename}  loading="lazy"/>      
                 </div>
             ))}
-            
         </div>
-
     );
 };
 
